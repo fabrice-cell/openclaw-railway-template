@@ -1,0 +1,5 @@
+[phases.setup]
+nixPkgs = ["python3", "python311Packages.pip"]
+
+[phases.install]
+cmds = ["npm install", "pip install google-auth google-api-python-client --break-system-packages"]
